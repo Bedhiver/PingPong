@@ -8,7 +8,7 @@ var config = {
       debug: false,
     },
   },
-  backgroundColor: "#4488aa",
+  backgroundColor: "#324257",
   scene: {
     preload: preloadGame,
     create: createGame,
@@ -47,12 +47,12 @@ function createGame() {
   scoreP1Text = this.add.text(16, 20, "Score : 0", {
     font: "bold 16px Courier",
     fontSize: "16px",
-    fill: "#d41f1f",
+    fill: "#9e9e9e",
   });
   scoreP2Text = this.add.text(700, 20, "Score : 0", {
     font: "bold 16px Courier",
     fontSize: "16px",
-    fill: "#32a852",
+    fill: "#9e9e9e",
   });
 
   // Define the ball and its physic
@@ -63,10 +63,10 @@ function createGame() {
   ball.setVelocityY(velocityBallY);
 
   // Draw rectangles
-  var rectTopPlayer1 = this.add.rectangle(0, -30, 10, 60, 0xd41f1f); // rouge
-  var rectBotPlayer1 = this.add.rectangle(0, 30, 10, 60, 0xd41f1f); // rouge
-  var rectTopPlayer2 = this.add.rectangle(0, -30, 10, 60, 0x32a852); // vert
-  var rectBotPlayer2 = this.add.rectangle(0, 30, 10, 60, 0x32a852); // vert
+  var rectTopPlayer1 = this.add.rectangle(0, -30, 10, 60, 0x9e9e9e);
+  var rectBotPlayer1 = this.add.rectangle(0, 30, 10, 60, 0x9e9e9e);
+  var rectTopPlayer2 = this.add.rectangle(0, -30, 10, 60, 0x9e9e9e);
+  var rectBotPlayer2 = this.add.rectangle(0, 30, 10, 60, 0x9e9e9e);
 
   // Add physics to rectangles
   this.physics.add.existing(rectTopPlayer1);
